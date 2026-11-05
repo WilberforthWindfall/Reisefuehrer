@@ -1,0 +1,220 @@
+=====================================================================
+  REISEFÜHRER  -  Version 0.12.1 (Beta)
+  Ein Add-on für World of Warcraft: Forever
+=====================================================================
+
+Was ist das?
+------------
+Der Reiseführer (früher "Forever Dashboard") zeigt dir in einem
+eigenen Fenster im Spiel:
+
+  * deinen Levelfortschritt - und wie viele Erfahrungspunkte deine
+    offenen Quests noch bringen,
+  * deine Quests nach Gebiet, mit Fortschritt und ALLEN Belohnungen,
+  * deine Berufe und Rezepte: was du jetzt lernen kannst, was später
+    kommt, wo der Lehrer oder Händler steht und was es kostet,
+  * deine Klassenfähigkeiten: jetzt lernbar, bald lernbar oder
+    später - mit Stufe und Kosten,
+  * ein Notizbuch - pro Charakter oder für den ganzen Account.
+
+Das Add-on lernt beim Spielen mit und teilt dieses Wissen automatisch
+mit Mitspielern, die das Add-on auch haben (in deiner Gruppe und in
+deiner Gilde). So profitiert ihr gegenseitig.
+
+
+Neu in 0.12.1
+-------------
+  * Das Fenster lässt sich jetzt verschieben: an der Titelleiste, am
+    Rand oder am Banner mit gedrückter linker Maustaste ziehen.
+    Die Position bleibt gespeichert.
+
+
+Neu in 0.12.0 (moderner Look)
+-----------------------------
+  * Schmales Banner: Name, Stufe und EP-Balken in einer Zeile.
+    Mehr Details (Klasse, Gilde, erholte EP) beim Drüberfahren.
+  * Oben "Charakter" und "Zeigen" nebeneinander, darunter das Gebiet.
+    Mit "Zeigen" filterst du die Quests: alle offenen, abgabebereit,
+    aktiv oder verfügbar - mit Anzahl.
+  * Schlanke Questzeilen: "[Stufe] Name", darunter Fortschritt und
+    Abgabe-Ort. Doppelt so viele Quests passen ins Fenster.
+  * Zahlen an den Seitenreitern (Quests im Log, lernbare Rezepte und
+    Fähigkeiten).
+  * Das Auftragsnetz öffnest du über das kleine Kartensymbol neben
+    den EP einer Quest.
+  Der klassische Look bleibt wie bisher (umschaltbar in den Optionen).
+
+
+Installation (einmalig, ca. 2 Minuten)
+--------------------------------------
+1. Beende World of Warcraft, falls es läuft.
+2. Öffne den Ordner, in dem WoW installiert ist. Meistens:
+      C:\Program Files (x86)\World of Warcraft\
+3. Gehe in den Ordner deiner WoW-Forever-Version.
+   In der Beta heißt er:   _classic_beta_
+   Darin weiter in:        Interface  ->  AddOns
+   (Gibt es den Ordner "AddOns" nicht, lege ihn einfach an.)
+4. Entpacke die ZIP-Datei genau dort hinein.
+   Danach muss es so aussehen:
+      ...\Interface\AddOns\ForeverDashboard\ForeverDashboard.lua
+      ...\Interface\AddOns\ForeverDashboard\ForeverDashboard.toc
+   (Der Ordner heißt weiterhin "ForeverDashboard" - das ist so gewollt,
+   damit deine bisher gesammelten Daten erhalten bleiben.)
+5. Starte WoW. In der Charakterauswahl unten links auf "AddOns"
+   klicken und prüfen, dass "Reiseführer" angehakt ist.
+6. Einloggen. Im Chat erscheint:
+      "Reiseführer: Version 0.12.1 (Beta) geladen."
+
+Fertig!
+
+
+Bedienung
+---------
+Gib diese Befehle einfach im Chatfenster ein:
+
+  /fd            Fenster öffnen oder schließen
+  /fd notiz      Fenster mit den Notizen öffnen
+  /fd info       kurzer Stand im Chat
+  /fd quests     Quest-Stand im Chat
+  /fd optionen   Optionen (Aussehen, Minimap-Knopf, Teilen)
+  /fd sync       zeigt, mit wem gerade geteilt wird
+  /fd sync aus   Teilen ausschalten   (/fd sync an  = wieder an)
+  /fd name       zeigt, unter welchem Namen du als Entdecker erscheinst
+  /fd zuname X   Zunamen selbst festlegen, falls er falsch erkannt wird
+
+Knopf an der Minimap (Landkarten-Symbol):
+  * Linksklick öffnet oder schließt den Reiseführer,
+  * Rechtsklick öffnet die Optionen,
+  * mit gedrückter Maustaste am Rand der Minimap verschieben.
+
+Optionen:
+  * Aussehen "Klassisch" oder "Spiel-Look" (Metallrahmen mit rundem
+    Bild, Holz-Hintergrund und Reitern rechts am Fenster - wie Guild ERP
+    und die modernen Fenster des Spiels). Jederzeit umschaltbar.
+  * Knopf an der Minimap zeigen oder verstecken.
+  * Teilen mit Gruppe und Gilde an oder aus.
+
+Im Fenster:
+  * Oben links wählst du, welchen deiner Charaktere du ansehen willst.
+    Andere Charaktere zeigen den Stand vom letzten Ausloggen.
+  * Reiter "Quests": auf den Gebietsnamen klicken = Liste aller Gebiete,
+    getrennt nach Gebieten, Dungeons und Schlachtzügen, mit Stufen-
+    bereich und Anzahl offener Quests. Die Pfeile daneben blättern.
+    (Ein * bei der Stufe heißt: geschätzt aus den bekannten Quests.)
+    Die Belohnungen stehen als kleine Symbole rechts unten in jeder
+    Quest (Rand = Qualität, z. B. blau). Ein Strich trennt feste
+    Belohnungen von denen zur Wahl. Maus darüber = Gegenstandswerte.
+    Es erscheinen nur Quests, die dein Charakter auch bekommen kann:
+    passende Fraktion (Allianz/Horde) und Klasse. Quests, die mehr als
+    4 Stufen über dir liegen, stehen unten in der Gruppe "Noch zu hoch".
+    Jede Quest zeigt, wo man sie annimmt und wo man sie abgibt
+    (Person, Gebiet, Koordinaten). Den Abgabeort lernt das Add-on beim
+    ersten Abgeben - auch von Mitspielern über das Teilen.
+  * Questnamen haben die Farben wie im Spiel: grün = unter deiner
+    Stufe, gelb = etwa deine Stufe, orange = schwer, rot = sehr
+    schwer, grau = lohnt nicht mehr.
+  * Klick auf eine aktive Quest öffnet sie im Questlog des Spiels.
+  * Welche Quests ein Charakter schon erledigt hat, fragt das Add-on
+    direkt beim Spiel ab - auch Quests von vor der Installation.
+    Erledigte Quests verschwinden so zuverlässig aus der Liste.
+  * Knopf "Auftragsnetz" an einer Quest: öffnet ein eigenes Fenster mit
+    der ganzen Questreihe als Kacheln und Pfeilen (Vorquest -> Folge-
+    quest), höchstens 3 nebeneinander, dann geht es eine Zeile tiefer
+    weiter. Mausrad blättert.
+    Der Knopf erscheint, sobald das Add-on die Reihe kennt - es lernt
+    sie, wenn ein Auftraggeber dir direkt nach der Abgabe die nächste
+    Quest anbietet. Quests mit gleichem Namen gelten als eine Reihe.
+    Falsch gelernte Verknüpfungen korrigiert es von selbst.
+  * Reiter "Rezepte": drei Auswahllisten - welcher Beruf, was gezeigt
+    wird (alle, jetzt lernbar, später) und die Sortierung. Standard:
+    "Nach Gruppe (wie im Spiel)", z. B. Lederbrustharnische. Fehlen
+    die Gruppen noch, das Berufefenster einmal öffnen. Es stehen
+    nur Rezepte da, die du noch lernen kannst - Gelerntes zeigt
+    das Add-on "Guild ERP".
+    Überschriften klappen auf und zu.
+  * Lehrer und Händler der anderen Fraktion werden ausgeblendet.
+  * Gibt es ein Rezept oder eine Fähigkeit bei mehreren Lehrern oder
+    Händlern, steht "+1 weitere" dabei. Maus darüber = eine zweite
+    Liste mit allen Stellen, nach Gebiet geordnet (dein aktuelles
+    Gebiet zuerst), mit Koordinaten und Preis.
+  * Reiter "Fähigkeiten": deine Klassenfähigkeiten, getrennt nach
+    "Jetzt lernbar" (mit Gesamtkosten), "Bald lernbar" (nächste 4
+    Stufen) und "Später". Was du schon kannst, steht in deinem
+    Zauberbuch. Auswahllisten für Kategorie
+    (z. B. Heilig, Schutz), Anzeige und Sortierung. Steigst du eine
+    Stufe auf, nennt das Add-on im Chat, was jetzt neu lernbar ist.
+  * Reiter "Notizen": oben wählst du "Charakter" oder "Ganzer
+    Account". Es speichert von selbst.
+  * Verschieben: das farbige Banner mit der Maus ziehen.
+    Schließen: X oder Esc.
+
+
+Damit die Rezepte erscheinen
+----------------------------
+Das Add-on kann nur lesen, was das Spiel ihm zeigt. Deshalb einmalig:
+  * jedes deiner Berufefenster kurz öffnen,
+  * deinen Berufslehrer ansprechen (Fenster öffnet sich),
+  * Händler mit Rezepten/Plänen ansprechen,
+  * Rezepte, die Gegner fallen lassen, merkt sich das Add-on beim
+    Plündern von selbst ("Beute: Gegner - Gebiet") und teilt sie,
+  * für die Fähigkeiten: einmal den Klassenlehrer ansprechen.
+    (Andere Charaktere derselben Klasse auf deinem Account nutzen
+    dieses Wissen mit.)
+Alles Weitere lernt es nebenbei. Was andere entdecken, bekommst du
+über das Teilen automatisch dazu.
+
+
+Was wird geteilt - und was nicht?
+---------------------------------
+Geteilt (mit Gruppe und Gilde, nur mit Nutzern dieses Add-ons):
+  * Quests: Name, Gebiet, Auftraggeber, Annahme- und Abgabeort, Stufe,
+    Erfahrungspunkte,
+    Belohnungen, Reihenfolge der Questreihen
+  * Rezeptkatalog: welcher Lehrer/Händler was anbietet, ab welchem
+    Berufswert, Kosten, Ort
+  * der Name des Charakters, der etwas zuerst entdeckt hat
+    ("entdeckt von ...")
+
+NICHT geteilt:
+  * deine Notizen
+  * welche Rezepte du kannst, welche Quests du erledigt hast
+  * deine Erfahrungspunkte, Gold, Ausrüstung - nichts Persönliches
+
+
+Ist das erlaubt?
+----------------
+Das Add-on nutzt ausschließlich die offizielle Add-on-Schnittstelle
+von Blizzard und hält sich an deren Add-on-Richtlinien:
+  * Es liest nur - es klickt, kauft, lernt oder kämpft NICHTS für dich.
+  * Es ist kostenlos, ohne Werbung, der Code ist offen lesbar.
+  * Das Teilen ist stark gebremst (höchstens etwa eine kleine
+    Nachricht pro Sekunde, im Kampf gar keine) und bleibt damit
+    deutlich unter den Grenzen, die Blizzard vorgibt.
+Hinweis: Das ist eine sorgfältige Einschätzung, keine Rechtsberatung.
+
+
+Wenn etwas nicht klappt
+-----------------------
+  * Keine Meldung "geladen" im Chat?
+      -> In der Charakterauswahl unter "AddOns" prüfen, ob das Add-on
+         angehakt ist. Ggf. "Veraltete AddOns laden" anhaken.
+      -> Liegt der Ordner richtig? Siehe Installation, Schritt 4.
+  * Fenster ist leer oder Rezepte fehlen?
+      -> Berufefenster öffnen und Lehrer ansprechen (siehe oben).
+  * Teilen klappt nicht?
+      -> /fd sync eingeben. Ihr müsst in derselben Gruppe oder Gilde
+         sein und beide das Add-on in der gleichen Version haben.
+      -> Beim ersten Mal kann das Übertragen ein paar Minuten dauern.
+  * Fenster verschwunden oder verrutscht?
+      -> /fd zweimal eingeben (zu und wieder auf).
+  * Daten sind dauerhaft gespeichert, wenn du ausloggst oder
+    /reload eingibst. Ein Absturz kann die letzten Minuten kosten.
+
+
+Beta-Hinweis
+------------
+Das ist eine Testversion. Fehler und Wünsche bitte an Barlor melden -
+am besten mit einem Bildschirmfoto (Taste "Druck") und kurzer
+Beschreibung, was du gemacht hast.
+
+Viel Spaß in Azeroth!

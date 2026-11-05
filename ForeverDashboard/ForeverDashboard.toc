@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: Reiseführer
+## Notes: Levelfortschritt, Quests, Rezepte, Fähigkeiten und Notizbuch - teilt Wissen mit Gruppe und Gilde (nur lesend)
+## Author: Barlor Rostbart
+## Version: 0.12.1 (Beta)
+## SavedVariables: ForeverDashboardData
+
+ForeverDashboard.lua
