@@ -2,6 +2,8 @@
 
 Zeigt im Spiel Levelfortschritt, Quests nach Gebiet, kommende Rezepte und Klassenfähigkeiten sowie ein Notizbuch. Nur lesend, keine Automatisierung.
 
+**Download (immer die aktuelle Version):** [Reisefuehrer.zip](https://github.com/WilberforthWindfall/Reisefuehrer/raw/main/Reisefuehrer.zip)
+
 - Version: 0.12.1 (Beta), Interface 16001
 - Ordner `ForeverDashboard/` gehört nach `World of Warcraft\_classic_beta_\Interface\AddOns\`
   (der Ordnername bleibt `ForeverDashboard`, damit gespeicherte Daten erhalten bleiben)
